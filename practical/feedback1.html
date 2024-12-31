@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="feedback-container">
+        <h1>Survey Form</h1>
+        <p>Thank you for shopping with us! We’d love to hear your thoughts and suggestions.</p>
+
+        <form action="/submit_feedback" method="POST" class="gta">
+            <div class="form-group">
+                <label for="satisfaction">How satisfied were you with your overall shopping experience?</label>
+                <select id="satisfaction" name="satisfaction" required>
+                    <option value="1">Very Dissatisfied</option>
+                    <option value="2">Dissatisfied</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Satisfied</option>
+                    <option value="5">Very Satisfied</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="easy_find">How easy was it to find the books you were looking for?</label>
+                <select id="easy_find" name="easy_find" required>
+                    <option value="1">Very Difficult</option>
+                    <option value="2">Difficult</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Easy</option>
+                    <option value="5">Very Easy</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="checkout">How easy was it to complete the checkout process?</label>
+                <select id="checkout" name="checkout" required>
+                    <option value="1">Very Difficult</option>
+                    <option value="2">Difficult</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Easy</option>
+                    <option value="5">Very Easy</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="delivery">Were your books delivered on time?</label>
+                <select id="delivery" name="delivery" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="improvements">What can we do to improve your experience with our website?</label>
+                <textarea id="improvements" name="improvements" rows="4" placeholder="Your suggestions..." required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Any additional comments or concerns?</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Your comments..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="recommend">Would you recommend our bookstore to others?</label>
+                <select id="recommend" name="recommend" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    <option value="maybe">Maybe</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit Feedback</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
